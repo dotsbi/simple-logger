@@ -1,7 +1,7 @@
 {
   "name": "simple-logger",
   "description": "",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./build",
   "scripts": {
     "prepublishOnly": "yarn && yarn build && yarn lint && yarn test",
@@ -37,6 +37,9 @@
       ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
-    "moduleFileExtensions": ["ts", "js"]
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
   }
 }
