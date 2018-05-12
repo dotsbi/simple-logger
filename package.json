@@ -1,5 +1,5 @@
 {
-  "name": "zero-logger",
+  "name": "slim-logger",
   "description": "",
   "version": "0.1.1",
   "main": "./build",
@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dotsbi/zero-logger.git"
+    "url": "git+https://github.com/dotsbi/slim-logger.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/dotsbi/zero-logger/issues"
+    "url": "https://github.com/dotsbi/slim-logger/issues"
   },
-  "homepage": "https://github.com/dotsbi/zero-logger#readme",
+  "homepage": "https://github.com/dotsbi/slim-logger#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/chalk": "^2.2.0",

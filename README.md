@@ -1,4 +1,4 @@
-# zero-logger
+# slim-logger
 
 A fully featured is a javascript logger with no dependencies.
 
@@ -12,15 +12,15 @@ Features
 ### Installing
 
 ```
-npm install zero-logger
+npm install slim-logger
 ```
 
 ### Usage
 
-zero-logger exposes multiple levels of logging
+slim-logger exposes multiple levels of logging
 
 ```js
-logger = require('zero-logger');
+logger = require('slim-logger');
 logger.fatal('fatal');
 logger.error('error');
 logger.warn('warn');
@@ -47,7 +47,7 @@ LOG_LEVEL=OFF node <script>
 Log level can also be set in code
 
 ```
-logger = require('zero-logger');
+logger = require('slim-logger');
 logger.setLogLevel('INFO')
 ```
 
