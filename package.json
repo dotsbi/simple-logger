@@ -1,0 +1,25 @@
+{
+  "name": "dotsbi-utils",
+  "description": "",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotsbi/dotsbi-utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotsbi/dotsbi-utils/issues"
+  },
+  "homepage": "https://github.com/dotsbi/dotsbi-utils#readme",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/node": "^10.0.8"
+  }
+}
