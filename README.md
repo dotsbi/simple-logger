@@ -7,7 +7,7 @@ Features
 * Browser compatible
 * Color coding per log level
 * Typescript declarations
-* zero dependencies
+* Zero dependencies
 
 ### Installing
 
