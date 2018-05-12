@@ -1,25 +1,42 @@
 {
-  "name": "dotsbi-utils",
+  "name": "simple-logger",
   "description": "",
   "version": "0.1.0",
+  "main": "./build",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "yarn && yarn build && yarn lint && yarn test",
+    "test": "jest",
+    "build": "tsc",
+    "lint": "tslint --project .",
+    "clean": "rm -rf node_modules"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dotsbi/dotsbi-utils.git"
+    "url": "git+https://github.com/dotsbi/simple-logger.git"
   },
   "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dotsbi/dotsbi-utils/issues"
+    "url": "https://github.com/dotsbi/simple-logger/issues"
   },
-  "homepage": "https://github.com/dotsbi/dotsbi-utils#readme",
+  "homepage": "https://github.com/dotsbi/simple-logger#readme",
   "dependencies": {
     "chalk": "^2.4.1"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
-    "@types/node": "^10.0.8"
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.0.8",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.12.0",
+    "typescript": "2.6.2"
+  },
+  "jest": {
+    "transform": {
+      ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
+    "moduleFileExtensions": ["ts", "js"]
   }
 }
