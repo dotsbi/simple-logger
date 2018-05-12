@@ -1,5 +1,5 @@
 {
-  "name": "simple-logger",
+  "name": "simple-logger-2",
   "description": "",
   "version": "0.1.1",
   "main": "./build",
@@ -37,9 +37,6 @@
       ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ]
+    "moduleFileExtensions": ["ts", "js"]
   }
 }

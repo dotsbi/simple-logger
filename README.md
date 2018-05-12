@@ -5,7 +5,7 @@ Simple javascript color coded logger written in typescript also browser compatib
 ### Installing
 
 ```
-npm install simple-logger
+npm install simple-logger-2
 ```
 
 ### Usage
@@ -13,7 +13,7 @@ npm install simple-logger
 simple-logger exposes multiple levels of logging
 
 ```js
-logger = require('simple-logger');
+logger = require('simple-logger-2');
 logger.fatal('fatal');
 logger.error('error');
 logger.warn('warn');
