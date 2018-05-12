@@ -12,7 +12,7 @@ npm install simple-logger
 
 simple-logger exposes multiple levels of logging
 
-````js
+```js
 logger = require('simple-logger');
 logger.fatal('fatal');
 logger.error('error');
@@ -42,4 +42,3 @@ LOG_LEVEL=OFF node <script>
 ```
 yarn test
 ```
-````
