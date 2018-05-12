@@ -1,19 +1,26 @@
-# simple-logger
+# zero-logger
 
-Simple javascript color coded logger written in typescript also browser compatible.
+A fully featured is a javascript logger with no dependencies.
+
+Features
+
+* Browser compatible
+* Color coding per log level
+* Typescript declarations
+* zero dependencies
 
 ### Installing
 
 ```
-npm install simple-logger-2
+npm install zero-logger
 ```
 
 ### Usage
 
-simple-logger exposes multiple levels of logging
+zero-logger exposes multiple levels of logging
 
 ```js
-logger = require('simple-logger-2');
+logger = require('zero-logger');
 logger.fatal('fatal');
 logger.error('error');
 logger.warn('warn');
@@ -35,6 +42,13 @@ LOG_LEVEL=INFO node <script>
 LOG_LEVEL=DEBUG node <script>
 LOG_LEVEL=TRACE node <script>
 LOG_LEVEL=OFF node <script>
+```
+
+Log level can also be set in code
+
+```
+logger = require('zero-logger');
+logger.setLogLevel('INFO')
 ```
 
 ## Running the tests

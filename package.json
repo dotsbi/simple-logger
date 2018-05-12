@@ -1,5 +1,5 @@
 {
-  "name": "simple-logger-2",
+  "name": "zero-logger",
   "description": "",
   "version": "0.1.1",
   "main": "./build",
@@ -12,16 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dotsbi/simple-logger.git"
+    "url": "git+https://github.com/dotsbi/zero-logger.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/dotsbi/simple-logger/issues"
+    "url": "https://github.com/dotsbi/zero-logger/issues"
   },
-  "homepage": "https://github.com/dotsbi/simple-logger#readme",
-  "dependencies": {
-    "chalk": "^2.4.1"
-  },
+  "homepage": "https://github.com/dotsbi/zero-logger#readme",
+  "dependencies": {},
   "devDependencies": {
     "@types/chalk": "^2.2.0",
     "@types/jest": "^22.2.3",
