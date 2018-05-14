@@ -1,4 +1,4 @@
-# slim-logger
+# typed-logger
 
 A fully featured is a javascript logger with no dependencies.
 
@@ -12,15 +12,15 @@ Features
 ### Installing
 
 ```
-npm install slim-logger
+npm install typed-logger
 ```
 
 ### Usage
 
-slim-logger exposes multiple levels of logging
+typed-logger exposes multiple levels of logging
 
 ```js
-logger = require('slim-logger');
+logger = require('typed-logger');
 logger.fatal('fatal');
 logger.error('error');
 logger.warn('warn');
@@ -47,7 +47,7 @@ LOG_LEVEL=OFF node <script>
 Log level can also be set in code
 
 ```
-logger = require('slim-logger');
+logger = require('typed-logger');
 logger.setLogLevel('INFO')
 ```
 

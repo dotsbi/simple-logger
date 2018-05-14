@@ -1,5 +1,5 @@
 {
-  "name": "slim-logger",
+  "name": "typed-logger",
   "description": "",
   "version": "0.1.1",
   "main": "./build",
@@ -12,16 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dotsbi/slim-logger.git"
+    "url": "git+https://github.com/dotsbi/typed-logger.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/dotsbi/slim-logger/issues"
+    "url": "https://github.com/dotsbi/typed-logger/issues"
   },
-  "homepage": "https://github.com/dotsbi/slim-logger#readme",
+  "homepage": "https://github.com/dotsbi/typed-logger#readme",
   "dependencies": {},
   "devDependencies": {
-    "@types/chalk": "^2.2.0",
     "@types/jest": "^22.2.3",
     "@types/node": "^10.0.8",
     "jest": "^22.4.3",
@@ -35,6 +34,9 @@
       ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
-    "moduleFileExtensions": ["ts", "js"]
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
   }
 }
