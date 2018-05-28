@@ -13,19 +13,6 @@ function padLeft(input: string, length: number, padding: string = ' ') {
   return output;
 }
 
-function padRight(input: string, length: number, padding: string = ' ') {
-  let output = input;
-  if (output.length >= length) {
-    return output;
-  }
-
-  while (output.length < length) {
-    output = output + padding;
-  }
-
-  return output;
-}
-
 function formatDate(date: Date) {
   const month = padLeft(date.getMonth().toString() + 1, 2, '0');
   const day = padLeft(date.getDate().toString(), 2, '0');
