@@ -20,4 +20,3 @@ if (process) {
 const logger = new Logger(LOG_LEVEL);
 
 export default logger;
-module.exports = logger;
