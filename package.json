@@ -19,7 +19,9 @@
     "url": "https://github.com/dotsbi/typed-logger/issues"
   },
   "homepage": "https://github.com/dotsbi/typed-logger#readme",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^2.4.1"
+  },
   "devDependencies": {
     "@types/jest": "^22.2.3",
     "@types/node": "^10.0.8",

@@ -40,5 +40,5 @@ export function logPrefix(logLevel: LogLevel) {
   const time = `${formatDate(new Date())}`;
   const level = `${LogLevel[logLevel]}`;
 
-  return `[${time}] ${padRight(`[${level}]`, 7)} -`;
+  return `[${time}] [${level}] -`;
 }
