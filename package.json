@@ -2,7 +2,8 @@
   "name": "typed-logger",
   "description": "",
   "version": "0.1.4",
-  "main": "./build",
+  "main": "./build/index.js",
+  "typings": "./build/index.d.ts",
   "scripts": {
     "prepublishOnly": "yarn && yarn build && yarn lint && yarn test",
     "test": "jest",
@@ -36,9 +37,6 @@
       ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ]
+    "moduleFileExtensions": ["ts", "js"]
   }
 }
