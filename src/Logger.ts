@@ -9,7 +9,7 @@ export enum LogLevel {
   WARN = 4,
   DEBUG = 5,
   TRACE = 6,
-  ALL = 7,
+  ALL = 7
 }
 
 export class Logger {
@@ -57,7 +57,7 @@ export class Logger {
   public trace(...args: any[]) {
     if (this.logLevel > LogLevel.TRACE) {
       // tslint:disable-next-line:no-console
-      console.log(chalk.grey(logPrefix(LogLevel.TRACE)), ...args);
+      console.log(chalk.grey(logPrefix(LogLevel.TRACE), ...args));
     }
   }
 }

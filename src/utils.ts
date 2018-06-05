@@ -1,5 +1,17 @@
 import { LogLevel } from './Logger';
 
+function getLevelShortName(level: string): string {
+  const levelShortName: any = {
+    FATAL: 'FTL',
+    ERROR: 'ERR',
+    INFO: 'INF',
+    WARN: 'WRN',
+    DEBUG: 'DBG',
+    TRACE: 'TRC'
+  };
+  return levelShortName[level];
+}
+
 function padLeft(input: string, length: number, padding: string = ' ') {
   let output = input;
   if (output.length >= length) {
@@ -26,6 +38,7 @@ function formatDate(date: Date) {
 export function logPrefix(logLevel: LogLevel) {
   const time = `${formatDate(new Date())}`;
   const level = `${LogLevel[logLevel]}`;
+  const shortLevel = getLevelShortName(level);
 
-  return `[${time}] [${level}] -`;
+  return `[${time}] [${shortLevel}] -`;
 }
