@@ -1,17 +1,5 @@
 import { LogLevel } from './Logger';
 
-function getLevelShortName(level: string): string {
-  const levelShortName: any = {
-    FATAL: 'FTL',
-    ERROR: 'ERR',
-    INFO: 'INF',
-    WARN: 'WRN',
-    DEBUG: 'DBG',
-    TRACE: 'TRC'
-  };
-  return levelShortName[level];
-}
-
 function padLeft(input: string, length: number, padding: string = ' ') {
   let output = input;
   if (output.length >= length) {
@@ -26,7 +14,7 @@ function padLeft(input: string, length: number, padding: string = ' ') {
 }
 
 function formatDate(date: Date) {
-  const month = padLeft(date.getMonth().toString() + 1, 2, '0');
+  const month = padLeft((date.getMonth() + 1).toString(), 2, '0');
   const day = padLeft(date.getDate().toString(), 2, '0');
   const hours = padLeft(date.getHours().toString(), 2, '0');
   const minutes = padLeft(date.getMinutes().toString(), 2, '0');
@@ -35,10 +23,9 @@ function formatDate(date: Date) {
   return `${date.getFullYear()}-${month}-${day} ${hours}:${minutes}:${seconds}.${ms}`;
 }
 
-export function logPrefix(logLevel: LogLevel) {
+export function logPrefix(_logLevel?: LogLevel) {
   const time = `${formatDate(new Date())}`;
-  const level = `${LogLevel[logLevel]}`;
-  const shortLevel = getLevelShortName(level);
+  // const level = `${LogLevel[logLevel]}`;
 
-  return `[${time}] [${shortLevel}] -`;
+  return `[${time}]`;
 }
