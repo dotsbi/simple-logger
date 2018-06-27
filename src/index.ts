@@ -11,7 +11,7 @@ if (process) {
       // tslint:disable-next-line:no-console
       console.warn(
         `LOG_LEVEL=${process.env.LOG_LEVEL} is not a valid log level.` +
-          'Must be one of [OFF, FATAL, ERROR, INFO, WARN, DEBUG, TRACE, ALL]',
+          'Must be one of [OFF, FATAL, ERROR, INFO, WARN, DEBUG, TRACE, ALL]'
       );
     }
   }
