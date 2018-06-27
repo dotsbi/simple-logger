@@ -22,42 +22,42 @@ export class Logger {
   public fatal(...args: any[]) {
     if (this.logLevel > LogLevel.FATAL) {
       // tslint:disable-next-line:no-console
-      console.error(chalk.magenta(logPrefix(LogLevel.FATAL)), ...args);
+      console.error(chalk.magenta(logPrefix()), ...args);
     }
   }
 
   public error(...args: any[]) {
     if (this.logLevel > LogLevel.ERROR) {
       // tslint:disable-next-line:no-console
-      console.error(chalk.red(logPrefix(LogLevel.ERROR)), ...args);
+      console.error(chalk.red(logPrefix()), ...args);
     }
   }
 
   public warn(...args: any[]) {
     if (this.logLevel > LogLevel.WARN) {
       // tslint:disable-next-line:no-console
-      console.warn(chalk.yellow(logPrefix(LogLevel.WARN)), ...args);
+      console.warn(chalk.yellow(logPrefix()), ...args);
     }
   }
 
   public info(...args: any[]) {
     if (this.logLevel > LogLevel.INFO) {
       // tslint:disable-next-line:no-console
-      console.info(chalk.green(logPrefix(LogLevel.INFO)), ...args);
+      console.info(chalk.green(logPrefix()), ...args);
     }
   }
 
   public debug(...args: any[]) {
     if (this.logLevel > LogLevel.DEBUG) {
       // tslint:disable-next-line:no-console
-      console.debug(chalk.blue(logPrefix(LogLevel.DEBUG)), ...args);
+      console.debug(chalk.blue(logPrefix()), ...args);
     }
   }
 
   public trace(...args: any[]) {
     if (this.logLevel > LogLevel.TRACE) {
       // tslint:disable-next-line:no-console
-      console.log(chalk.grey(logPrefix(LogLevel.TRACE), ...args));
+      console.log(chalk.grey(logPrefix(), ...args));
     }
   }
 }

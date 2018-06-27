@@ -1,5 +1,3 @@
-import { LogLevel } from './Logger';
-
 function padLeft(input: string, length: number, padding: string = ' ') {
   let output = input;
   if (output.length >= length) {
@@ -23,7 +21,7 @@ function formatDate(date: Date) {
   return `${date.getFullYear()}-${month}-${day} ${hours}:${minutes}:${seconds}.${ms}`;
 }
 
-export function logPrefix(_logLevel?: LogLevel) {
+export function logPrefix() {
   const time = `${formatDate(new Date())}`;
   return `[${time}]`;
 }
