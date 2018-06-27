@@ -3,6 +3,8 @@
 # Because we use yarn #
 package-lock.json
 
+# build
+
 # .vscode #
 .vscode
 
