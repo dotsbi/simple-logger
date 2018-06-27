@@ -25,7 +25,5 @@ function formatDate(date: Date) {
 
 export function logPrefix(_logLevel?: LogLevel) {
   const time = `${formatDate(new Date())}`;
-  // const level = `${LogLevel[logLevel]}`;
-
   return `[${time}]`;
 }
